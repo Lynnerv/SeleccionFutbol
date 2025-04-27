@@ -11,6 +11,8 @@ public class ApplicationDbContext : IdentityDbContext
     {
     }
 
+    public DbSet<Assignment> Assignments { get; set; } // Si tienes la tabla
+    
     public DbSet<Player> Players { get; set; }
 
     public DbSet<Team> Teams { get; set; }
